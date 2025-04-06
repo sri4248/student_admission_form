@@ -1,0 +1,65 @@
+<!-- boiler plate templete -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms and input tags</title>
+</head>
+
+<body>
+    <h1>Student Admission form</h1>
+    <!-- inside the action attribute we will store file location -->
+    <form action="backend.php">
+        <!-- we have many types of input tags like checkbox,radiobutton,text,password,email..etc -->
+        <!-- name: <input type="text"name="StudentName"value=""></input> -->
+         <label for="StudentName">name:</label>
+        <div>
+            <input type="text" name="StudentName" value=" " id="StudentName"placeholder="Enter your name" />
+        </div>
+        <br />
+        <label for="contact">contact number:</label>
+        <!-- value attribute is used for store user data suppose we enter a name that data will be stored in backend -->
+        <div>
+            <input type="number" name="contact" value=" "id="contact"placeholder="Enter your contact" />
+        </div>
+        <br>
+        <label for="email">email:</label>
+        <div>
+            <input type="email" name="email" value=""id="email">
+        </div>
+        <br>
+        <div>
+            gender:Male<input type="radio"name="gender"id="">female<input type="radio"name="gender"id="">
+        </div>
+        <br>
+        <div>
+            do you accept the terms and conditions<input type="checkbox"id="">
+        </div>
+        <br>
+        <div>
+            Dob:<input type="date"name="Dob"id="">
+        </div>
+        <br>
+        <div>
+            upload your file<input type="file"name="file"id=""accept="image/*">
+        </div>
+        <br>
+        <div>
+        Residential Address:<br><textarea name="address"id=""cols="30"rows="10"></textarea>
+        </div>
+        web dev<select name="options"id="">
+            <option value="">fronted</option>
+            <option value="">backend</option>
+            <option value="">fullstack</option>
+
+        </select>
+        <br>
+        <br>
+        <input type="submit"value="submit form">
+        <input type="reset"value="reset">
+    </form>
+</body>
+
+</html>
